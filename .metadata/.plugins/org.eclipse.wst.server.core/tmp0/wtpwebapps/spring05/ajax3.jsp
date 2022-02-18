@@ -10,8 +10,9 @@
 $(function() { 
 	$('#b1').click(function() {
 		$.ajax({
-			url: "resources/file/MOCK_DATA.json",
-
+			url: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.chosun.com%2Farc%2Foutboundfeeds%2Frss%2F%3FoutputType%3Dxml&api_key=4gnwdol91ds3amnxlnhdmb3vb6vrphpyrj1zl1y3",
+			//url: "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+			//url:"//rss.hankooki.com/daily/dh_it_tech.xml",
 			data: {
 				url: "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
 				api_key : "4gnwdol91ds3amnxlnhdmb3vb6vrphpyrj1zl1y3",
